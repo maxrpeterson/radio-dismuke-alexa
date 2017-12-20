@@ -1,0 +1,11 @@
+{
+  "name": "radio-dimuke-alexa",
+  "version": "0.1.0",
+  "description": "Alexa skill for Radio Dismuke (http://radiodismuke.com/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Peterson",
+  "license": "MIT"
+}
