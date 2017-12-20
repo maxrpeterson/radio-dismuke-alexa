@@ -9,6 +9,7 @@
   "author": "Max Peterson",
   "license": "MIT",
   "dependencies": {
-    "alexa-sdk": "^1.0.24"
+    "alexa-sdk": "^1.0.24",
+    "dotenv": "^4.0.0"
   }
 }
