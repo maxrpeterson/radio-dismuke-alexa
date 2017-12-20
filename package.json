@@ -11,5 +11,9 @@
   "dependencies": {
     "alexa-sdk": "^1.0.24",
     "dotenv": "^4.0.0"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.4.7",
+    "archiver": "^2.1.0"
   }
 }

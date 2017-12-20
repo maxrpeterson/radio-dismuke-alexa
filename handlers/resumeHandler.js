@@ -1,3 +1,3 @@
 module.exports = function() {
-  this.emit(':tell', 'hello world');
+  this.emit(':tell', 'Welcome to Radio Dismuke');
 };

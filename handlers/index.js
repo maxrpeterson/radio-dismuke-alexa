@@ -1,3 +1,3 @@
 module.exports = {
-  ['AMAZON.ResumeIntent']: require('./resumeHandler');
+  ['AMAZON.ResumeIntent']: require('./resumeHandler'),
 };
