@@ -1,5 +1,5 @@
 function sorry() {
-  this.response.speach('Sorry, that functionality is not supported.');
+  this.response.speak('Sorry, that functionality is not supported.');
   this.emit(':responseReady');
 }
 
