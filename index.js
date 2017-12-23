@@ -17,8 +17,7 @@ const createLogger = (cb) => {
 }
 
 exports.handler = (event, context, cb) => {
-  console.log('event', JSON.stringify(event));
-  const alexa = Alexa.handler(event, context, createLogger(cb));
+  const alexa = Alexa.handler(event, context, cb);
   alexa.appId = process.env.APP_ID;
   alexa.registerHandlers(handlers);
   alexa.execute();

@@ -4,12 +4,12 @@ function sorry() {
 }
 
 module.exports = {
-  LoopOffIntent: sorry,
-  LoopOnIntent: sorry,
-  NextIntent: sorry,
-  PreviousIntent: sorry,
-  RepeatIntent: sorry,
-  ShuffleOffIntent: sorry,
-  ShuffleOnIntent: sorry,
-  StartOverIntent: sorry
+  'AMAZON.LoopOffIntent': sorry,
+  'AMAZON.LoopOnIntent': sorry,
+  'AMAZON.NextIntent': sorry,
+  'AMAZON.PreviousIntent': sorry,
+  'AMAZON.RepeatIntent': sorry,
+  'AMAZON.ShuffleOffIntent': sorry,
+  'AMAZON.ShuffleOnIntent': sorry,
+  'AMAZON.StartOverIntent': sorry
 };
