@@ -1,12 +1,18 @@
-module.exports = function() {
+function resume() {
   const speechOutput = 'Playing Radio Dismuke';
-  const behavior = 'PlayBehavior.REPLACE_ALL';
-  const url = 'http://early1900s.org/radiodismuke/radiodismuke.pls';
+  const behavior = 'REPLACE_ALL';
+  const url = 'https://early1900s.org/radiodismuke/radiodismuke.pls';
   const token = 'radioDismuke';
   const expectedPreviousToken = 'expectedPreviousStream';
   const offsetInMilliseconds = 0;
   this.response
     .speak(speechOutput)
-    .audioPlayer(behavior, url, token, expectedPreviousToken, offsetInMilliseconds);
+    .audioPlayer('play', behavior, url, token, undefined, offsetInMilliseconds);
   this.emit(':responseReady');
+};
+
+module.exports = {
+  ['AMAZON.ResumeIntent']: resume,
+  ResumeIntent: resume,
+  LaunchRequest: resume,
 };
