@@ -6,7 +6,7 @@ const handlers = require('./handlers');
 const createLogger = (cb) => {
   return (error, result) => {
     if (error) {
-      console.error()
+      console.error(error);
     }
     if (result) {
       const msg = typeof result !== 'string' ? JSON.stringify(result) : result;
