@@ -1,5 +1,7 @@
 function resume() {
-  const speechOutput = 'Playing Radio Dismuke';
+  const speechOutput = `${
+      Math.random() > 0.66 ? 'Oh I like that station! ' : ''
+    }Playing Radio Dismuke`;
   const behavior = 'REPLACE_ALL';
   const url = 'https://early1900s.org/radiodismuke/radiodismuke.pls';
   const token = 'radioDismuke';
